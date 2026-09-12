@@ -1,0 +1,9 @@
+bin/
+obj/
+publish/
+*.AppImage
+*.deb
+*.tar.gz
+*.exe
+ai-app
+*.o

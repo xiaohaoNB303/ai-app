@@ -1,0 +1,24 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net48-windows</TargetFramework>
+    <UseWindowsForms>true</UseWindowsForms>
+    <LangVersion>latest</LangVersion>
+    <AssemblyName>AI-Setup</AssemblyName>
+    <Product>AI</Product>
+    <Version>6.6.6</Version>
+    <ApplicationIcon>..\ai.ico</ApplicationIcon>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <EmbeddedResource Include="..\publish\AI.exe"><LogicalName>AI.exe</LogicalName></EmbeddedResource>
+    <EmbeddedResource Include="..\publish\AI.exe.config"><LogicalName>AI.exe.config</LogicalName></EmbeddedResource>
+    <EmbeddedResource Include="..\publish\Microsoft.Web.WebView2.Core.dll"><LogicalName>Microsoft.Web.WebView2.Core.dll</LogicalName></EmbeddedResource>
+    <EmbeddedResource Include="..\publish\Microsoft.Web.WebView2.WinForms.dll"><LogicalName>Microsoft.Web.WebView2.WinForms.dll</LogicalName></EmbeddedResource>
+    <EmbeddedResource Include="..\publish\WebView2Loader.dll"><LogicalName>WebView2Loader.dll</LogicalName></EmbeddedResource>
+    <EmbeddedResource Include="..\ai.ico"><LogicalName>ai.ico</LogicalName></EmbeddedResource>
+    <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+</Project>
