@@ -22,7 +22,7 @@ icons/    应用图标（SVG / PNG / ICO）
 
 | 平台 | WebView | 说明 |
 |---|---|---|
-| Android | 系统 WebView | 见官网仓库 `assets/AI.apk` |
+| Android | 系统 WebView | 自建壳（`app/android/`），见下「Android 构建」 |
 | Windows | 系统 WebView2 运行时 | .NET Framework 4.8 WinForms，Win10/11 零额外依赖 |
 | Linux | 系统 WebKitGTK | 纯 C，二进制约 17 KB |
 
@@ -52,6 +52,18 @@ cd setup
 dotnet publish -c Release -o publish
 # 产出 publish/AI-Setup.exe → 重命名为 AI-Setup-6.6.6.exe
 ```
+
+## Android 构建
+
+依赖：Android build-tools（aapt2 / d8 / zipalign / apksigner）与 android.jar。
+
+```bash
+ANDROID_BUILD_TOOLS=.../build-tools ANDROID_JAR=.../android.jar bash app/android/build.sh
+# 产出：AI-6.6.6.apk（约 275 KB，自签名）
+```
+
+签名密钥首次运行自动生成于 `~/.config/ai-android.keystore`（口令见脚本内默认值）。
+注意：与旧版（第三方壳服务签名）签名不同，覆盖安装前需先卸载旧版。
 
 ## 安装包下载
 

@@ -60,7 +60,8 @@ a:focus-visible,button:focus-visible{outline:2px solid rgba(243,220,168,.65);out
   border-bottom:1px solid rgba(255,255,255,.10)}
 .nav-inner{display:flex;align-items:center;justify-content:space-between;height:68px}
 .brand{display:flex;align-items:center;gap:11px;color:#fff;font-weight:700;font-size:17px}
-.brand-mark{width:34px;height:34px;border-radius:12px;background:rgba(228,184,99,.14);
+.brand-mark-img{width:36px;height:36px;object-fit:contain;filter:drop-shadow(0 4px 12px rgba(124,156,196,.35))}
+.brand-mark-old{width:34px;height:34px;border-radius:12px;background:rgba(228,184,99,.14);
   border:1px solid rgba(228,184,99,.42);display:grid;place-items:center;
   color:var(--gold-bright);font-weight:800;font-size:14px;letter-spacing:.02em;
   box-shadow:0 4px 16px rgba(228,184,99,.12), inset 0 1px 0 rgba(243,220,168,.35)}
@@ -189,6 +190,7 @@ section{position:relative;padding:96px 0}
   border:1px solid rgba(255,255,255,.16);border-radius:24px;padding:44px;
   box-shadow:0 20px 56px rgba(3,7,18,.55), inset 0 1px 0 rgba(255,255,255,.25), inset 0 -1px 0 rgba(2,6,16,.35)}
 .dl-main{display:grid;grid-template-columns:auto 1fr;gap:30px;align-items:center;margin-bottom:8px}
+.app-logo img{width:76px;height:76px;object-fit:contain}
 .app-logo{width:96px;height:96px;border-radius:24px;background:rgba(255,255,255,.06);
   border:1px solid rgba(255,255,255,.16);display:grid;place-items:center;
   font-family:var(--font-display);font-size:44px;font-weight:700;color:var(--gold);
@@ -305,7 +307,7 @@ section{position:relative;padding:96px 0}
 <header class="nav">
   <div class="container nav-inner">
     <a class="brand" href="#top">
-      <span class="brand-mark">猫</span>
+      <img class="brand-mark-img" src="assets/cat.png" alt="猫酱AI">
       <span>猫酱AI</span>
     </a>
     <a class="nav-cta" href="#download">立即下载</a>
@@ -406,7 +408,7 @@ section{position:relative;padding:96px 0}
   <div class="container">
     <div class="dl-card sweep">
       <div class="dl-main">
-        <div class="app-logo">猫</div>
+        <div class="app-logo"><img src="assets/cat.png" alt="猫酱AI"></div>
         <div>
           <h2>下载猫酱AI</h2>
           <p>点击下方按钮立即下载 Android 版 APK，其他平台见 <a class="gold-link" href="#platforms">多平台安装包</a>。</p>
