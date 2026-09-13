@@ -3,7 +3,7 @@
 #include <webkit2/webkit2.h>
 
 #define APP_URL   "https://a15449a37364fd9b2.app.workbuddy.host"
-#define APP_TITLE "AI"
+#define APP_TITLE "猫酱AI"
 
 static void on_title_changed(WebKitWebView *view, GParamSpec *pspec, GtkWindow *win) {
     const gchar *title = webkit_web_view_get_title(view);

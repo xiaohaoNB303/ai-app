@@ -10,13 +10,13 @@ namespace AISetup
 {
     internal static class Program
     {
-        private const string AppName = "AI";
+        private const string AppName = "猫酱AI";
         private const string Version = "6.6.6";
         private const string UninstallBat =
             "@echo off\r\n" +
             "echo Uninstalling AI ...\r\n" +
-            "del \"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\AI.lnk\" >nul 2>&1\r\n" +
-            "del \"%USERPROFILE%\\Desktop\\AI.lnk\" >nul 2>&1\r\n" +
+            "del \"%APPDATA%\\Microsoft\\Windows\\Start Menu\\Programs\\猫酱AI.lnk\" >nul 2>&1\r\n" +
+            "del \"%USERPROFILE%\\Desktop\\猫酱AI.lnk\" >nul 2>&1\r\n" +
             "reg delete \"HKCU\\Software\\Microsoft\\Windows\\CurrentVersion\\Uninstall\\AI\" /f >nul 2>&1\r\n" +
             "cd /d \"%LOCALAPPDATA%\"\r\n" +
             "rmdir /s /q \"%LOCALAPPDATA%\\AI\"\r\n" +
@@ -74,14 +74,14 @@ namespace AISetup
 
                 if (MessageBox.Show(
                         AppName + " " + Version + " 安装完成（开始菜单 + 桌面快捷方式）。\r\n\r\n是否立即运行？",
-                        "AI 安装程序", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                        "猫酱AI 安装程序", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
                 {
                     System.Diagnostics.Process.Start(exe);
                 }
             }
             catch (Exception ex)
             {
-                MessageBox.Show("安装失败：" + ex.Message, "AI 安装程序",
+                MessageBox.Show("安装失败：" + ex.Message, "猫酱AI 安装程序",
                     MessageBoxButtons.OK, MessageBoxIcon.Error);
             }
         }

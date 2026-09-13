@@ -15,8 +15,8 @@ make_desktop_file() {
     cat <<'EOF'
 [Desktop Entry]
 Type=Application
-Name=AI
-Comment=AI 桌面客户端
+Name=猫酱AI
+Comment=猫酱AI 桌面客户端
 Exec=ai-app
 Icon=ai-app
 Terminal=false

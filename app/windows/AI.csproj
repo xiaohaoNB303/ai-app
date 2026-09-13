@@ -6,7 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <LangVersion>latest</LangVersion>
     <AssemblyName>AI</AssemblyName>
-    <Product>AI</Product>
+    <Product>猫酱AI</Product>
     <Version>6.6.6</Version>
     <ApplicationIcon>ai.ico</ApplicationIcon>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -16,6 +16,13 @@
   <ItemGroup>
     <PackageReference Include="Microsoft.Web.WebView2" Version="1.0.4191.47" />
     <PackageReference Include="Microsoft.NETFramework.ReferenceAssemblies" Version="1.0.3" PrivateAssets="all" />
+  </ItemGroup>
+
+  <!-- setup/ 是独立子项目，防止其 obj 生成文件被默认通配进本项目的编译 -->
+  <ItemGroup>
+    <Compile Remove="setup/**" />
+    <EmbeddedResource Remove="setup/**" />
+    <None Remove="setup/**" />
   </ItemGroup>
 
 </Project>

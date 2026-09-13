@@ -1,6 +1,6 @@
-# AI · 多平台网页套壳客户端
+# 猫酱AI · 多平台网页套壳客户端
 
-「AI」Android 应用（`top.ai.com`）的桌面端同款实现：一个使用**系统自带 WebView** 的网页套壳，不捆绑任何浏览器内核（不用 Electron）。
+「猫酱AI」Android 应用（`top.ai.com`）的桌面端同款实现：一个使用**系统自带 WebView** 的网页套壳，不捆绑任何浏览器内核（不用 Electron）。
 
 所有平台加载同一地址（解包 Android 版 APK 的 `assets/app_config.json` 所得）：
 

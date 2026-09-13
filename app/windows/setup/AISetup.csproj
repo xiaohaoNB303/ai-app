@@ -6,7 +6,7 @@
     <UseWindowsForms>true</UseWindowsForms>
     <LangVersion>latest</LangVersion>
     <AssemblyName>AI-Setup</AssemblyName>
-    <Product>AI</Product>
+    <Product>猫酱AI</Product>
     <Version>6.6.6</Version>
     <ApplicationIcon>..\ai.ico</ApplicationIcon>
   </PropertyGroup>
