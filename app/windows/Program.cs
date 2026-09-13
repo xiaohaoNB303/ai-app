@@ -16,7 +16,7 @@ namespace AI
 
             var form = new Form
             {
-                Text = "AI",
+                Text = "猫酱AI",
                 ClientSize = new System.Drawing.Size(1200, 800),
                 MinimumSize = new System.Drawing.Size(420, 320),
                 StartPosition = FormStartPosition.CenterScreen,
@@ -55,7 +55,7 @@ namespace AI
                 {
                     MessageBox.Show(
                         "WebView2 初始化失败：请确认系统已安装 Microsoft Edge WebView2 运行时。\n\n" + ex.Message,
-                        "AI", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        "猫酱AI", MessageBoxButtons.OK, MessageBoxIcon.Warning);
                     form.Close();
                 }
             };
